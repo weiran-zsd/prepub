@@ -1,0 +1,19 @@
+{
+	"name": "prepublish",
+	"description": "A tool to help finding potential problems before publish.",
+	"version": "0.0.1",
+	"license": "MIT",
+	"bin": {
+		"prepublish": "index.js"
+	},
+	"author": {
+		"name": "weiran",
+		"email": "weiran.zsd@outlook.com",
+		"url": "https://github.com/aladdin-add"
+	},
+	"keywords": ["prepublish", "weiran"],
+	"files": ["index.js", "utils"],
+	"scripts": {
+		"format": "prettier --write \"./**/*.{js,json}\""
+	}
+}
