@@ -1,8 +1,11 @@
-const welcome = require('cli-welcome');
-const pkg = require('./../package.json');
-const unhandled = require('cli-handle-unhandled');
+import welcome from 'cli-welcome';
+import fs from 'fs'
+import unhandled from 'cli-handle-unhandled';
 
-module.exports = ({ clear = true }) => {
+const pkgUrl = new URL("../package.json", import.meta.url)
+const pkg = JSON.parse(fs.readFileSync(pkgUrl, "utf8"));
+
+export default async function ({ clear = true }) {
 	unhandled();
 	welcome({
 		title: `prepublish`,
@@ -14,4 +17,4 @@ module.exports = ({ clear = true }) => {
 		bold: true,
 		clear
 	});
-};
+}

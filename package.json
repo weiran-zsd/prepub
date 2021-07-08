@@ -6,14 +6,45 @@
 	"bin": {
 		"prepublish": "index.js"
 	},
+	"type": "module",
+	"engines": {
+		"node": ">=12.17.0"
+	},
 	"author": {
 		"name": "weiran",
 		"email": "weiran.zsd@outlook.com",
 		"url": "https://github.com/aladdin-add"
 	},
-	"keywords": ["prepublish", "weiran"],
-	"files": ["index.js", "utils"],
+	"keywords": [
+		"prepublish",
+		"weiran"
+	],
+	"files": [
+		"index.js",
+		"utils/"
+	],
 	"scripts": {
-		"format": "prettier --write \"./**/*.{js,json}\""
+		"format": "prettier --write \"./**/*.{js,json}\"",
+		"lint": "eslint ."
+	},
+	"eslintConfig": {
+		"extends": [
+			"eslint:recommended",
+			"plugin:node/recommended"
+		],
+		"parserOptions": {
+			"ecmaVersion": "latest"
+		}
+	},
+	"devDependencies": {
+		"eslint": "^7.30.0",
+		"eslint-plugin-node": "^11.1.0"
+	},
+	"dependencies": {
+		"cli-alerts": "^1.2.2",
+		"cli-handle-unhandled": "^1.1.1",
+		"cli-meow-help": "^2.0.2",
+		"cli-welcome": "^2.2.2",
+		"meow": "^10.0.1"
 	}
 }
