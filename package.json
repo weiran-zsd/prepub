@@ -1,44 +1,45 @@
 {
 	"name": "prepublish",
-	"description": "A tool to help finding potential problems before publish.",
 	"version": "0.0.1",
+	"description": "A tool to help finding potential problems before publish.",
+	"keywords": [
+		"prepublish",
+		"weiran"
+	],
 	"license": "MIT",
-	"bin": {
-		"prepublish": "index.js"
-	},
-	"type": "module",
-	"engines": {
-		"node": ">=12.17.0"
-	},
 	"author": {
 		"name": "weiran",
 		"email": "weiran.zsd@outlook.com",
 		"url": "https://github.com/aladdin-add"
 	},
-	"keywords": [
-		"prepublish",
-		"weiran"
-	],
+	"type": "module",
+	"bin": {
+		"prepublish": "index.js"
+	},
 	"files": [
 		"index.js",
 		"utils/"
 	],
 	"scripts": {
 		"format": "prettier --write \"./**/*.{js,json}\"",
-		"lint": "eslint ."
+		"lint": "eslint .",
+		"test": "echo \"running npm run test...\"",
+		"release": "npm run lint && npm run test && standard-version",
+		"prepare": "husky install"
+	},
+	"commitlint": {
+		"extends": [
+			"@commitlint/config-conventional"
+		]
 	},
 	"eslintConfig": {
+		"parserOptions": {
+			"ecmaVersion": "latest"
+		},
 		"extends": [
 			"eslint:recommended",
 			"plugin:node/recommended"
-		],
-		"parserOptions": {
-			"ecmaVersion": "latest"
-		}
-	},
-	"devDependencies": {
-		"eslint": "^7.30.0",
-		"eslint-plugin-node": "^11.1.0"
+		]
 	},
 	"dependencies": {
 		"cli-alerts": "^1.2.2",
@@ -46,5 +47,16 @@
 		"cli-meow-help": "^2.0.2",
 		"cli-welcome": "^2.2.2",
 		"meow": "^10.0.1"
+	},
+	"devDependencies": {
+		"@commitlint/cli": "^12.1.4",
+		"@commitlint/config-conventional": "^12.1.4",
+		"eslint": "^7.30.0",
+		"eslint-plugin-node": "^11.1.0",
+		"husky": "^6.0.0",
+		"standard-version": "^9.3.0"
+	},
+	"engines": {
+		"node": ">=12.22.0"
 	}
 }
