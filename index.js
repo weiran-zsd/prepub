@@ -7,17 +7,18 @@
  * @author weiran <https://github.com/aladdin-add>
  */
 
-import init from './utils/init.js';
+import check from './lib/check.js';
 import cli from './utils/cli.js';
-import log from './utils/log.js';
+import { error, success } from './utils/log.js';
 
 const input = cli.input;
-const flags = cli.flags;
-const { clear, debug } = flags;
+const flags = cli.flags; // eslint-disable-line no-unused-vars
 
 (async () => {
-	init({ clear });
 	input.includes(`help`) && cli.showHelp(0);
-
-	debug && log(flags);
+	const problems = check({});
+	problems.length
+		? problems.forEach(problem => error(problem.message))
+		: success('awesome! no problems found!🎉🎉🎉');
+	process.exitCode = problems.length;
 })();

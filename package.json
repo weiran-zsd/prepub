@@ -18,12 +18,13 @@
 	},
 	"files": [
 		"index.js",
-		"utils/"
+		"utils/",
+		"lib/"
 	],
 	"scripts": {
 		"format": "prettier --write \"./**/*.{js,json}\"",
 		"lint": "eslint .",
-		"test": "echo \"running npm run test...\"",
+		"test": "node tests/lib/index.js",
 		"release": "npm run lint && npm run test && standard-version",
 		"prepare": "husky install"
 	},
@@ -46,6 +47,7 @@
 		"cli-handle-unhandled": "^1.1.1",
 		"cli-meow-help": "^2.0.2",
 		"cli-welcome": "^2.2.2",
+		"globby": "^11.0.4",
 		"meow": "^10.0.1"
 	},
 	"devDependencies": {
