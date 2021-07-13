@@ -2,9 +2,19 @@
 
 Prerequisites: Node.js (>=12.22.0).
 
+## Install
+
+```bash
+$ npm i @weiran.zsd/prepub -D
+```
+
 ## Usage
 
-TBF.
+```js
+{
+    "scripts": {"prepublish": "prepub"}
+}
+```
 
 ## License
 
