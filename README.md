@@ -1,4 +1,5 @@
-# create-node-cli
+# @weiran.zsd/prepub
+> A tool to help finding potential problems before publish.
 
 Prerequisites: Node.js (>=12.22.0).
 
