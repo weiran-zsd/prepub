@@ -27,7 +27,8 @@
 		"lint": "eslint .",
 		"test": "node tests/lib/index.js",
 		"release": "npm run lint && npm run test && standard-version",
-		"prepare": "husky install"
+		"prepare": "husky install",
+		"prepublishOnly": "node index.js"
 	},
 	"commitlint": {
 		"extends": [
