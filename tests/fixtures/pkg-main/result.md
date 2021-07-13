@@ -1,3 +1,3 @@
 ```txt
-❌ cannot found file "./foo.js"(pkg.main).
+cannot found file "./foo.js"(pkg.main).
 ```
