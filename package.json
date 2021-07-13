@@ -1,10 +1,11 @@
 {
-	"name": "prepublish",
-	"version": "0.0.1",
+	"name": "@weiran.zsd/prepub",
+	"version": "0.0.2",
 	"description": "A tool to help finding potential problems before publish.",
 	"keywords": [
+		"npm",
 		"prepublish",
-		"weiran"
+		"cli"
 	],
 	"license": "MIT",
 	"author": {
