@@ -13,6 +13,10 @@
 		"email": "weiran.zsd@outlook.com",
 		"url": "https://github.com/aladdin-add"
 	},
+	"repository": {
+		"type": "https",
+		"url": "https://github.com/weiran-zsd/prepub"
+	},
 	"type": "module",
 	"bin": {
 		"prepub": "index.js"
