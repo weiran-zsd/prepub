@@ -1,6 +1,6 @@
 import fs from 'fs';
 import globby from 'globby';
-import check from '../../lib/check.js';
+import { check } from '../../lib/check.js';
 import { success, error } from '../../utils/log.js';
 import { createRequire } from 'module';
 

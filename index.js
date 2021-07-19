@@ -9,7 +9,7 @@
 
 import fs from 'fs';
 import path from 'path';
-import check from './lib/check.js';
+import { check } from './lib/check.js';
 import cli from './utils/cli.js';
 import { error, success } from './utils/log.js';
 
