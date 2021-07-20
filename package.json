@@ -54,7 +54,8 @@
 		"cli-meow-help": "^2.0.2",
 		"cli-welcome": "^2.2.2",
 		"globby": "^11.0.4",
-		"meow": "^10.0.1"
+		"meow": "^10.0.1",
+		"shelljs": "^0.8.4"
 	},
 	"devDependencies": {
 		"@commitlint/cli": "^12.1.4",
