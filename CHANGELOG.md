@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.0.8](https://github.com/weiran-zsd/prepub/compare/v0.0.7...v0.0.8) (2021-07-20)
+
+
+### Features
+
+* check branch name ([43cffc2](https://github.com/weiran-zsd/prepub/commit/43cffc25a8378eda4dfdaa7e3710f935c964f886))
+
 ### [0.0.7](https://github.com/weiran-zsd/prepub/compare/v0.0.6...v0.0.7) (2021-07-19)
 
 
