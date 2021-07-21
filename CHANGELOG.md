@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.0.9](https://github.com/weiran-zsd/prepub/compare/v0.0.8...v0.0.9) (2021-07-21)
+
+
+### Features
+
+* not allowed to publish a private package ([9179a22](https://github.com/weiran-zsd/prepub/commit/9179a22d92b2def427037cc164f86a1b070ba399))
+
 ### [0.0.8](https://github.com/weiran-zsd/prepub/compare/v0.0.7...v0.0.8) (2021-07-20)
 
 
